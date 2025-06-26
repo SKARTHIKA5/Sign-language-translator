@@ -1,0 +1,15 @@
+gesture-translator/
+  │
+  ├── gesture_data.csv                  # Raw captured hand landmark dataset
+  ├── balanced_gesture_data.csv         # Oversampled balanced dataset
+  │
+  ├── balancedgesturedata.py            # Applies RandomOverSampler to balance data
+  ├── gesture_detection.py              # Collects hand landmark data & saves to CSV
+  ├── model_training.py                 # Trains an LSTM model and saves it
+  ├── dynamic gesture recognition.py    # Real-time gesture detection with confidence filtering
+  ├── Real-Time Gesture Recognition.py  # Predicts and speaks gesture directly
+  ├── gesture_to_speech.py              # Forms words/sentences and speaks them
+  │
+  ├── scaler.pkl                        # Saved StandardScaler
+  ├── label_encoder.pkl                 # Saved LabelEncoder
+  ├── gesture_recognition_model.h5      # Trained LSTM model
